@@ -278,7 +278,10 @@ Rules:
   try{
     const response = await fetch("https://property-funnel-proxy.ezyjac1.workers.dev", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "X-App-Secret": "xg-SIrDczIeA0XSxmP7BzcRrxjmh5Utb"
+      },
       body: JSON.stringify({
         model: "claude-sonnet-4-6",
         max_tokens: 1000,
